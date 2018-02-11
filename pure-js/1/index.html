@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <style type="text/css">
+        .todo {
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+        }
+        .todo {
+            max-width: 500px;
+            font-size: 1.4em;
+            line-height: 1.4em;
+        }
+        .todo .todo-header {
+            background-color: deepskyblue;
+            padding: 20px;
+        }
+
+        .todo .todo-header > form {
+            display: flex;
+
+        }
+        .todo .todo-header .todo-input {
+            flex-grow: 1;
+            line-height: 1.2em;
+            font-size: 1.2em;
+        }
+        .todo .todo-header button {
+            border: none;
+        }
+        .todo .todo-item.todo-completed {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="todo">
+        <div class="todo-header">
+            <form novalidate>
+                <input type="text" class="todo-input" placeholder="Add todo" />
+                <button type="submit">Add Todo item</button>
+            </form>
+        </div>
+        <div class="todo-body">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
